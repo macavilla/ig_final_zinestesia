@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital@0;1&family=Special+Elite&display=swap");
+
+@font-face {
+  font-family: "CsGoenkaRegular";
+  src: url(../assets/fonts/cs-goenka-font/CsGoenkaRegularDemo-KVEWW.otf)
+    format("opentype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "CsGoenkaRegular", sans-serif;
+}
+p {
+  font-family: "Special Elite";
+}
