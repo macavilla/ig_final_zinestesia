@@ -10,16 +10,28 @@ h4,
 h5,
 h6 {
   font-family: "CsGoenkaRegular", sans-serif;
+  margin: 0.5rem 0;
 }
 
 p {
   font-family: "Special Elite";
+  font-size: 1.2rem;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+section {
+  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 
 ## Sobre el proyecto
 
-**Zinestesia** es un sitio web dedicado al mundo de los _fanzines_, el _collage_ y las _técnicas de animación experimental_, con un enfoque especial en la cultura DIY y los medios alternativos de comunicación en Latinoamérica.
+**Zinestesia** es un sitio web dedicado al mundo de los _fanzines_ como medios alternativos de comunicación y experimentación visual, y su vínculo con la cultura DIY con foco en latinoamérica.
 
 Este proyecto fue realizado como **trabajo práctico final** de la materia **Informática General** (cátedra Drelichmann) de la **Licenciatura en Artes Multimediales** de la **Universidad Nacional de las Artes (UNA)**.
 
