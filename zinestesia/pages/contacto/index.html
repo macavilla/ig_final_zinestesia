@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../js/contacto.js"></script>
     <title>Zinestesia </title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h2>Contacto</h2>
-            <p>Dejanos un mensaje!</p>
-        </header>
-        <main>
-            <section>
+    <div class="container contacto">
 
-                <form action="https://submit-form.com/COOXh5Ayn">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required="" />
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required="" />
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+        <main>
+            <section class="contact-form-wrapper">
+                <form id="contact-form" action="https://formsubmit.co/dd9a097cb0d48c7c5ef04bf0837411c1" method="POST">
+                    <p>Dejanos un mensaje!</p>
+                    <div class="field">
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name" placeholder="Name" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="field">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+                    </div>
+                    <div class="hidden-fields">
+                        <input type="hidden" name="_next" value="./gracias/index.html">
+                        <input type="hidden" name="_autoresponse"
+                            value="Gracias por tu mensaje. Trataremos de contestarte en breve.">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde Zinestesia">
+                    </div>
                     <button type="submit">Enviar</button>
                 </form>
 
@@ -32,5 +42,6 @@
     </div>
 
 </body>
+
 
 </html>
