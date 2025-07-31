@@ -1,0 +1,26 @@
+.zine-builder {
+  text-align: center;
+}
+.zine-builder .palette {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+}
+.zine-builder .canvas {
+  position: relative;
+  width: min(90vw, 630px);
+  aspect-ratio: 1/1.414;
+  background: white;
+  border: 2px solid black;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.zine-builder .draggable {
+  margin: 0 0.5rem;
+  font-size: 1.7rem;
+  cursor: grab;
+}
+
+/*# sourceMappingURL=juego.css.map */
