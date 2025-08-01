@@ -17,11 +17,20 @@
     margin-bottom: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+
+    .element {
+      position: absolute;
+      font-size: 2rem;
+    }
   }
 
   .draggable {
     margin: 0 0.5rem;
     font-size: 1.7rem;
     cursor: grab;
+
+    .image {
+      max-width: 100px;
+    }
   }
 }

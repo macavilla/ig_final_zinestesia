@@ -17,10 +17,17 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+.zine-builder .canvas .element {
+  position: absolute;
+  font-size: 2rem;
+}
 .zine-builder .draggable {
   margin: 0 0.5rem;
   font-size: 1.7rem;
   cursor: grab;
+}
+.zine-builder .draggable .image {
+  max-width: 100px;
 }
 
 /*# sourceMappingURL=juego.css.map */
