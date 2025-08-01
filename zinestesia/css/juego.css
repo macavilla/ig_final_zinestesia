@@ -6,6 +6,24 @@
   padding: 1rem;
   border: 2px dashed #ccc;
 }
+.zine-builder .uploader {
+  margin: 2rem;
+}
+.zine-builder .uploader label {
+  background-color: #f79159;
+  box-shadow: 0 6px rgb(244.6551724138, 112.7586206897, 40.3448275862);
+  transition: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.zine-builder .uploader label:hover {
+  box-shadow: 0 4px rgb(198.9137931034, 76.6896551724, 9.5862068966);
+  top: 2px;
+}
+.zine-builder .uploader input {
+  display: none;
+}
 .zine-builder .canvas {
   position: relative;
   width: min(90vw, 630px);

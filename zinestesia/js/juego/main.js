@@ -1,5 +1,3 @@
-console.log("main js :>> ");
-
 const emojis = [
   "✌",
   "😂",
@@ -41,7 +39,6 @@ const ZineBuilder = () => {
           rotation: 0,
         });
 
-        // Usamos setState con callback para evitar race conditions
         setImages((prev) => [...prev, ...newImages]);
       };
       reader.readAsDataURL(file);
@@ -72,7 +69,6 @@ const ZineBuilder = () => {
 
   const handleDragOver = (e) => {
     e.preventDefault();
-    console.log("e :>> ", e);
   };
 
   return (
@@ -82,12 +78,17 @@ const ZineBuilder = () => {
         {emojis.map((emoji) => (
           <DraggableItem key={emoji} type={emoji} />
         ))}
-        {images.map((img) => (
-          <DraggableItem key={img.id} type={img.src} img={img} />
-        ))}
       </div>
+      {images.length > 0 && (
+        <div className="palette">
+          {images.map((img) => (
+            <DraggableItem key={img.id} type={img.src} img={img} />
+          ))}
+        </div>
+      )}
 
-      <div>
+      <div className="uploader">
+        <label htmlFor="image-upload">Subir una imagen</label>
         <input
           type="file"
           id="image-upload"
@@ -106,8 +107,8 @@ const ZineBuilder = () => {
             {el.image ? (
               <img
                 src={el.image}
-                alt="elemento visual"
-                style={{ maxWidth: "150px" }}
+                alt="imagen dropeada"
+                style={{ maxWidth: "90%" }}
               />
             ) : (
               <span>{el.type}</span>

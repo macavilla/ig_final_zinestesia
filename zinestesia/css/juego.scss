@@ -7,6 +7,26 @@
     border: 2px dashed #ccc;
   }
 
+  .uploader {
+    margin: 2rem;
+    label {
+      background-color: #f79159;
+      box-shadow: 0 6px darken(#f79159, 10%);
+      transition: none;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        box-shadow: 0 4px darken(#f79159, 25%);
+        top: 2px;
+      }
+    }
+
+    input {
+      display: none;
+    }
+  }
   .canvas {
     position: relative;
     width: min(90vw, 630px); // ancho A4 escalado
