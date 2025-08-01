@@ -26,8 +26,8 @@
 }
 .zine-builder .canvas {
   position: relative;
-  width: min(90vw, 630px);
-  aspect-ratio: 1/1.414;
+  width: min(90vw, 1200px);
+  aspect-ratio: 1.414/1;
   background: white;
   border: 2px solid black;
   margin-inline: auto;
@@ -37,7 +37,15 @@
 }
 .zine-builder .canvas .element {
   position: absolute;
+  cursor: move;
+  user-select: none;
+  width: auto;
   font-size: 2rem;
+}
+.zine-builder .canvas .element img {
+  max-width: 100%;
+  width: auto;
+  pointer-events: none;
 }
 .zine-builder .draggable {
   margin: 0 0.5rem;

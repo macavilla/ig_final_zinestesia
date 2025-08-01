@@ -29,8 +29,8 @@
   }
   .canvas {
     position: relative;
-    width: min(90vw, 630px); // ancho A4 escalado
-    aspect-ratio: 1 / 1.414; // relación A4
+    width: min(90vw, 1200px); // ancho A4 escalado
+    aspect-ratio: 1.414 / 1; // relación A4
     background: white;
     border: 2px solid black;
     margin-inline: auto;
@@ -40,7 +40,16 @@
 
     .element {
       position: absolute;
+      cursor: move;
+      user-select: none;
+      width: auto;
       font-size: 2rem;
+
+      img {
+        max-width: 100%;
+        width: auto;
+        pointer-events: none;
+      }
     }
   }
 

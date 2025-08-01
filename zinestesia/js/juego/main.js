@@ -22,6 +22,8 @@ const { useState } = React;
 const ZineBuilder = () => {
   const [elements, setElements] = useState([]);
   const [images, setImages] = useState([]);
+  const [draggedId, setDraggedId] = useState(null);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   const handleUpload = (e) => {
     const files = Array.from(e.target.files);
@@ -71,6 +73,32 @@ const ZineBuilder = () => {
     e.preventDefault();
   };
 
+  const handleMouseDown = (e, id) => {
+    const element = elements.find((el) => el.id === id);
+    if (!element) return;
+
+    setDraggedId(id);
+    setOffset({
+      x: e.clientX - element.x,
+      y: e.clientY - element.y,
+    });
+  };
+
+  const handleMouseMove = (e) => {
+    if (draggedId === null) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left - offset.x;
+    const y = e.clientY - rect.top - offset.y;
+
+    setElements((prev) =>
+      prev.map((el) => (el.id === draggedId ? { ...el, x, y } : el))
+    );
+  };
+  const handleMouseUp = () => {
+    setDraggedId(null);
+  };
+
   return (
     <div className="zine-builder">
       <h1>🎨 Zine Builder</h1>
@@ -97,12 +125,19 @@ const ZineBuilder = () => {
           onChange={handleUpload}
         />
       </div>
-      <div className="canvas" onDrop={handleDrop} onDragOver={handleDragOver}>
+      <div
+        className="canvas"
+        onDrop={handleDrop}
+        onDragOver={handleDragOver}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+      >
         {elements.map((el) => (
           <div
             className="element"
             key={el.id}
             style={{ top: el.y, left: el.x }}
+            onMouseDown={(e) => handleMouseDown(e, el.id)} // onDragStart={handleDragStart}
           >
             {el.image ? (
               <img
