@@ -132,7 +132,24 @@ button:hover {
 }
 
 section {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

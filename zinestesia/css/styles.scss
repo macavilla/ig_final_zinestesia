@@ -1,6 +1,17 @@
 @use "./fonts";
 @use "./contacto";
 
+// variables
+$pink: #ecb2ba;
+$pink-dark: #c6939a;
+$tape-gray: #dbd8be;
+$tape-edge-gray: #b7b49d;
+$transparent: rgba(255, 255, 255, 0);
+$shadow-size: 1px;
+$paper-dark: darken($pink-dark, 10%);
+
+$paper-color: $pink;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,5 +25,24 @@
 }
 
 section {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 50%;
+  }
 }
