@@ -1,3 +1,11 @@
+.glide {
+  max-height: 90vh;
+}
+.glide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .glide__slide img {
   max-width: 100%;
 }

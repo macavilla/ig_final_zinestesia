@@ -1,7 +1,11 @@
 .glide {
+  max-height: 90vh;
   &__track {
   }
   &__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       max-width: 100%;
     }
