@@ -137,7 +137,7 @@ const ZineBuilder = () => {
             className="element"
             key={el.id}
             style={{ top: el.y, left: el.x }}
-            onMouseDown={(e) => handleMouseDown(e, el.id)} // onDragStart={handleDragStart}
+            onMouseDown={(e) => handleMouseDown(e, el.id)}
           >
             {el.image ? (
               <img
@@ -159,7 +159,7 @@ const DraggableItem = ({ type, img }) => {
   const handleDragStart = (e) => {
     e.dataTransfer.setData("type", type);
     if (img) {
-      e.dataTransfer.setData("image", img.src); // setear imagen para datatransfer
+      e.dataTransfer.setData("image", img.src);
     }
   };
 
