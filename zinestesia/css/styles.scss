@@ -20,9 +20,6 @@ section {
   margin: 2rem 0;
 }
 
-header {
-  padding: 2rem;
-}
 button {
   border: none;
   padding: 0.5rem 1rem;
@@ -68,7 +65,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  padding: 1rem 2rem;
+  margin: 0 0 2rem;
 
   // variantes de color
   @each $name, $theme in $paper-themes {
