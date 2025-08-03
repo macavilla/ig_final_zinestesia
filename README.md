@@ -1,4 +1,4 @@
-# 🎞️ Zinestesia
+s# 🎞️ Zinestesia
 
 ## Sobre el proyecto
 
@@ -15,7 +15,7 @@ El sitio fue maquetado con HTML5, y el diseño fue realizado utilizando **Sass**
 #### Para compilar el CSS:
 
 ```bash
-sass zinestesia/css/styles.scss:zinestesia/css/styles.css zinestesia/css/juego.scss:zinestesia/css/juego.css zinestesia/css/galeria.scss:zinestesia/css/galeria.css --watch
+sass css/styles.scss:css/styles.css css/juego.scss:css/juego.css css/galeria.scss:css/galeria.css --watch
 ```
 
 ## Estructura del sitio
