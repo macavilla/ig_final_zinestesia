@@ -1,8 +1,24 @@
 @use "./variables" as *;
 
 .glide {
-  max-height: 90vh;
-  height: 90vh;
+  position: relative;
+  max-height: 100vh;
+  &__arrows {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+  }
 
   &__track {
     height: 100%;

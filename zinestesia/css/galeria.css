@@ -1,6 +1,21 @@
 .glide {
-  max-height: 90vh;
-  height: 90vh;
+  position: relative;
+  max-height: 100vh;
+}
+.glide__arrows {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+.glide__arrows button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
 }
 .glide__track {
   height: 100%;
