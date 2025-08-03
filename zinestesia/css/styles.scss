@@ -1,6 +1,5 @@
-@use "./fonts";
-@use "./contacto";
 @use "./variables" as *;
+@use "./fonts";
 
 * {
   box-sizing: border-box;
@@ -24,7 +23,18 @@ section {
 header {
   padding: 2rem;
 }
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: salmon;
 
+  &:hover {
+    background: darken(salmon, 15%);
+    transition: background-color 0.3s ease-out;
+  }
+}
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -129,5 +139,81 @@ footer {
     opacity: 0.5;
 
     transform: rotate(0.25deg);
+  }
+}
+
+.lined-paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    lightblue 0px,
+    lightblue 1px,
+    transparent 1px,
+    transparent
+  );
+  margin: 50px auto;
+  background-size: 30px 30px;
+  height: 90vh;
+  position: relative;
+  box-shadow: -2px -1px 5px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+
+  &:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 10%;
+    content: "";
+    width: 1px;
+    background: salmon;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 5% 15%;
+  }
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 50px 0 0;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    input,
+    textarea {
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid grey;
+      padding: 0 0.25rem;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #007bff;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+  }
+
+  #email-error {
+    font-size: 1rem;
+    color: darken(salmon, 40%);
   }
 }
