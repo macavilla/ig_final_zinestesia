@@ -70,5 +70,7 @@ $paper-themes: (
     height: 100%;
     background: linear-gradient($transparent, 50%, $dark, 51%, $transparent),
       linear-gradient(to right, $transparent, 50%, $dark, 51%, $transparent);
+    z-index: 0;
+    pointer-events: none;
   }
 }
