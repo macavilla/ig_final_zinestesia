@@ -4,7 +4,7 @@ Este sitio fue realizado como **trabajo práctico final** de la materia **Inform
 
 ---
 
-# 🎞️ Zinestesia
+## 🎞️ Zinestesia
 
 **Zinestesia** es un sitio web dedicado al mundo de los _fanzines_ como medios alternativos de comunicación y experimentación visual, y su vínculo con la cultura DIY con foco en latinoamérica.
 
