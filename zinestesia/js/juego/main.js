@@ -101,7 +101,7 @@ const ZineBuilder = () => {
 
   return (
     <div className="zine-builder">
-      <h1>🎨 Zine Builder</h1>
+      <h1>🎨 Collage Builder</h1>
       <div className="palette">
         {emojis.map((emoji) => (
           <DraggableItem key={emoji} type={emoji} />
